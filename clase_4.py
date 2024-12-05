@@ -34,11 +34,24 @@
 #simulacion basa en una condicion externa
 
 ##simularemos el crecimiento de una poblacion hasta que alcance un limite 
-poblacion = 1000
-limite = 5000
-tasa_crecimiento = 1.1
-while poblacion < limite:
- print (f"poblacion actual: {poblacion}")
- poblacion = int(poblacion * tasa_crecimiento)
-print (F"poblacion final: {poblacion}")
+# poblacion = 1000
+# limite = 5000
+# tasa_crecimiento = 1.1
+# while poblacion < limite:
+#  print (f"poblacion actual: {poblacion}")
+#  poblacion = int(poblacion * tasa_crecimiento)
+# print (F"poblacion final: {poblacion}")
     
+
+##lecturas de un sensor 
+##simular la lectura de un sensor que medira valores aleatorios hasta que alcance un valor objetivo
+import random
+
+sensor = random.randint(0,50)
+objetivo = 40
+contador = 1
+
+while sensor < objetivo:
+    print ( f"en la lectura numero {contador}, el valor del sensor es : {sensor}")
+    sensor += random.randint(1,10)
+    contador += 1
